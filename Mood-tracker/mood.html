@@ -1,47 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Mood Tracker Form </title>
 
-    </head>
-    <body>
-        <section>
-            <form>
-                <h3>A Fun Form to Fill</h3>
-                <label for="name">What is your full name? </label>
-                <br>
-                <input type="text" name="name" placeholder="Enter your name">
-                <br>
-                
-                <label for="age">What is your age?</label>
-                <br>
-                <input type="number" name="age" placeholder="age">
-                <br>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mood Tracker Form </title>
 
-                <label for="gender"> What is your gender? </label>
-                <br>
-                <input type="text" name="gender" placeholder="M/F">
-                <br>
+</head>
 
-                <label for="date">What date is this entry for?</label>
-                <br>
-                <input type="date" name="date" placeholder="DD/MM/YYYY">
-                <br>
+<body>
+    <section>
+        <form>
+            <h3>A Fun Form to Fill</h3>
+            <label for="name">What is your full name? </label>
+            <br>
+            <input type="text" name="name" placeholder="Enter your name">
+            <br>
 
-                <label for="time">What time of day are you filling this out?</label>
-                <br>
-                <input type="time" name="time" placeholder="HH:MM">
-                <br>
+            <label for="age">What is your age?</label>
+            <br>
+            <input type="number" name="age" placeholder="age">
+            <br>
 
-                <label for="emotion">What time of day are you filling this out?</label>
-                <br>
-                <input type="radio" 
-            </form>
-        </section>
-    </body>
-    
+            <label for="gender"> What is your gender? </label>
+            <br>
+            <input type="text" name="gender" placeholder="M/F">
+            <br>
 
+            <label for="date">What date is this entry for?</label>
+            <br>
+            <input type="date" name="date" placeholder="DD/MM/YYYY">
+            <br>
 
+            <label for="time">What time of day are you filling this out?</label>
+            <br>
+            <input type="time" name="time" placeholder="HH:MM">
+            <br>
+
+            <label for="emotion">How are you feeling right now? </label>
+            <br>
+            <label>
+                <input type="radio" name="emotion" value="happy"> Happy 😊
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="emotion" value="sad"> Sad 😞
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="emotion" value="angry"> Angry 😠
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="emotion" value="anxious"> Anxious 😰
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="emotion" value="calm"> Calm 😌
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="emotion" value="excited"> Excited 🤩
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="emotion" value="tired"> Tired 😴
+            </label>
+            <br>
+            <label for="moodcolor">If your mood today were a color, what would it be? </label>
+            <br>
+            <input type="text" name="moodcolor" placeholder="sunset orange, storm gray">
+            <br>
+            <label for="song">What song or sound best describes your mood right now? </label>
+            <br>
+            <input type="text" name="song" placeholder="Golden Brown">
+            <br>
+            <label for="fluctuation">Did your emotions change throughout the day, or stay steady? </label>
+            <br>
+            <label>
+                <input type="radio" name="fluctuation" value="steady"> Stayed steady
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="fluctuation" value="fluctuated"> Fluctuated slightly
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="fluctuation" value="changed"> Changed a lot
+            </label>
+            <br>
+            <label for="loopingthought">What's one thought that's been looping in your mind today? </label>
+            <br>
+            <textarea id="loopingthought" name="loopingthought" rows="4" cols="50"> </textarea>
+            <br>
+            <label for="self">If you could send your current self a message from yesterday, what would it say? </label>
+            <br>
+            <textarea id="self" name="self" rows="4" cols="50"></textarea>
+            <br>
+            <label for="connect"> Are you feeling more connected or disconnected from people today? </label>
+            <br>
+            <label>
+                <input type="checkbox" name="connect" value="very"> Very connected
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="connect" value="somewhat"> Somewhat connected
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="connect" value="neutral"> Neutral
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="connect" value="bitdisconnected"> A bit disconnected
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="connect" value="disconnected"> Very disconnected
+            </label>
+            <br>
+            <label for="motivation"> What gave you a little burst of motivation today? </label>
+            <br>
+            <input type="text" name="motivation" placeholder="a task, a song, a conversation">
+            <br>
+            <label for="drain">What drained your energy the most today? </label>
+            <br>
+            <input type="text" name="drain" placeholder="too many calls, overthinking, traffic">
+            <br>
+            <label for="grounded"> What's one thing that helped you feel grounded today? </label>
+            <br>
+            <input type="text" name="grounded" placeholder="deep breaths, journaling, a walk">
+            <br>
+            <label for="energy"> What kind of energy do you want to carry into tomorrow? </label>
+            <br>
+            <input type="text" name="energy" placeholder="calm focus, curiosity, lightness">
+            <br>
+            <label for="sumup"> Sum up today in one quiet sentence. </label>
+            <br>
+            <input type="text" name="sumup" placeholder="I made it through./ Still learning to breathe.">
+            <br>
+            <br>
+            <input type="submit" value="Submit">
+            <br>
+        </form>
+    </section>
+</body>
 </html>
